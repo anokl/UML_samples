@@ -22,12 +22,11 @@ Notation | Visibility
 
 Plant UML example:
 ```
-Instance <|-- VulkanRootObject
-
-class ThreadPool 
+class A
 {
-  + void Queue(std::function< void() > && _workerFunc)
-  + void Wait()
+  + void PublicFunction()
+  - void PrivateFunction()
+  # void ProtectedFunction()
 }
 ```
 
