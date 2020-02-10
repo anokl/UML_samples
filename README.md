@@ -1,4 +1,4 @@
-# UML_samples
+# UML samples
 ## Types of modelling
 There are two basic types of modeling: structural and behavioral. 
 The structural modeling focuses on the static structure of the system, its components and their relations. The structure diagrams in UML consist of the following:
@@ -12,6 +12,30 @@ The behavioral modelling describes the dynamic behaviour of the system, that is 
 * Sequence diagram
 * Activity diagram
 ## Class diagrams
+### Visibility
+Notation | Visibility
+---------| ---------
+\+ | Public
+\# | Protected
+\- | Private
+\~ | Package
+
+Plant UML example:
+```
+Instance <|-- VulkanRootObject
+
+class ThreadPool 
+{
+  + void Queue(std::function< void() > && _workerFunc)
+  + void Wait()
+}
+```
+
+![Class Diagram](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/anokl/UML_samples/master/UML/visibility.uml)
+
+
+### Association
+### Association
 ### Aggregation
 ### Composition
 ### Multiplicity
