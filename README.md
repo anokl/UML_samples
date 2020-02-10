@@ -20,7 +20,7 @@ Notation | Visibility
 \- | Private
 \~ | Package
 
-Plant UML example:
+[Plant UML syntax](https://github.com/anokl/UML_samples/blob/master/UML/visibility.puml)
 ```
 class A
 {
@@ -29,6 +29,7 @@ class A
   # void ProtectedFunction()
 }
 ```
+Generated image:
 
 ![Class Diagram](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/anokl/UML_samples/master/UML/visibility.puml)
 
