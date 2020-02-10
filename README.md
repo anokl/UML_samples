@@ -20,14 +20,16 @@ Notation | Visibility
 \- | Private
 \~ | Package
 
-[Plant UML syntax](https://github.com/anokl/UML_samples/blob/master/UML/visibility.puml)
+Plant UML syntax:
 ```
+@startuml
 class A
 {
   + void PublicFunction()
   - void PrivateFunction()
   # void ProtectedFunction()
 }
+@startuml
 ```
 Generated image:
 
