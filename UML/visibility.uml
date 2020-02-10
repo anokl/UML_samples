@@ -1,0 +1,8 @@
+nstance <|-- VulkanRootObject
+
+class ThreadPool 
+{
+  + void Queue(std::function< void() > && _workerFunc)
+  + void Wait()
+}
+
