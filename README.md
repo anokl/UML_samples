@@ -177,6 +177,31 @@ Bus--->Bus
 ```
 
 ### Activation boxes
+Activation boxes on object liftime shows the periode when the object is completing a task. The longer the box the longer the task. 
+A task is usually activated by a messag coming from another object but an object may also activate itself:
+
+
+![Class Diagram](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/anokl/UML_samples/master/UML/activation_boxes.puml)
+
+@startuml
+Client -> Bus: SendMessage
+activate Bus
+Bus -> Directory: GetPeersHandlingMessage
+activate Directory
+Directory->Bus: <<List of peers>>
+deactivate Directory
+Bus->Transport: SendMessageToPeers
+activate Transport
+Transport->Bus
+deactivate Transport
+Bus->Client
+deactivate Bus
+@enduml
+
+
+
+
+
 ### Messages
 ### Loops
 ### Optional flows
