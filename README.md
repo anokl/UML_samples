@@ -201,14 +201,12 @@ deactivate Bus
 ```
 
 ### Messages
-On sequence diagram, object cmmunicate and activate each other with messages. Messages are graphically represented by arrows. There are three types of messages: asynchronous, synchronous and reply
+On sequence diagram, objects cmmunicate and activate each other with messages. Messages are graphically represented by arrows. There are three types of messages: 
 
 ![UML](https://github.com/anokl/UML_samples/blob/master/UML/arrow_types.png)
 
-
-
-
 ### Loops
+
 ### Optional flows
 ### Alternative flows
 
