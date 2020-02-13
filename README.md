@@ -66,8 +66,8 @@ class Finger {}
 Hand->Finger
 @enduml
 ```
-### Multiplicity
 
+### Multiplicity
 In UML the number of objects that participate in a relation is called multiplicity: 
 
 Notation | Multiplicty
@@ -148,7 +148,6 @@ Transport<|--MulticastTransport
 ```
 
 ### Realization
-
 Similar to generalization, realization in terms of OOP denotes an implementation of an interface:
 
 ![UML](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/anokl/UML_samples/master/UML/realization.puml)
@@ -160,8 +159,8 @@ IHardwareCommChannel<|..CommChannel
 IHardwareCommChannel<|..SimulatedCommChannel
 @enduml
 ```
-## Sequence diagrams
 
+## Sequence diagrams
 Sequence diagrams visualize how components in a software system interact. 
 
 ### Lifeline
@@ -210,7 +209,6 @@ Sometimes, the same task must be executed multiple times. For instance, when it 
 
 ![UML](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/anokl/UML_samples/master/UML/loop.puml)
 
-
 ### Optional and alternative flows
 Optional and alternative flows allows to model alternatives in sequence diagrams. 
 Optional flow is very similar to if statement in imprerative programing language. 
@@ -248,8 +246,6 @@ end
 return
 @enduml
 ```
-
-### Alternative flows
 
 ## Component diagrams
 ## Package diagrams
