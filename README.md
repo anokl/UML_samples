@@ -230,6 +230,7 @@ return
 ```
 
 Alternative flow is similar to switch statement:
+
 ![UML](http://www.plantuml.com/plantuml/proxy?src=https://github.com/anokl/UML_samples/blob/master/UML/alternative_flow.puml)
 
 ```
