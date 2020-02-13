@@ -138,7 +138,7 @@ PeerDirectory..>Peer
 ### Generalization
 The generalization in terms of OOP is an inheritence. The inheritence may appear when a domain includes multiple classes of similar nature. The common attributes or member functions of such classes are moved to a common base class:
 
-![Class Diagram](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/anokl/UML_samples/master/UML/genralization.puml)
+![Class Diagram](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/anokl/UML_samples/master/UML/generalization.puml)
 
 ```
 @startuml
