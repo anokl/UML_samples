@@ -1,0 +1,6 @@
+@startuml
+class Hand {}
+class Finger {}
+
+Hand->Finger
+@enduml
