@@ -217,6 +217,7 @@ Optional flow is very similar to if statement in imprerative programing language
 
 ![UML](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/anokl/UML_samples/master/UML/optional_flow.puml)
 
+```
 @startuml
 MessageDispatcher -> Directory: PeerStarted
 activate Directory
@@ -226,8 +227,26 @@ Directory -> Transport: SendSnapshot
 end
 return
 @enduml
+```
 
 Alternative flow is similar to switch statement:
+![UML](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/anokl/UML_samples/master/UML/alternative_flow.puml)
+
+```
+@startuml
+View->Controller: event
+
+activate Controller
+alt Tool navigate
+Controller->Controller: navigation
+else Tool contrast
+Controller->Controller: contrast change
+else Tool rotation
+Controller->Controller: rotate
+end
+return
+@enduml
+```
 
 ### Alternative flows
 
