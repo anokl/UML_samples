@@ -1,0 +1,16 @@
+@startuml
+class PeerDirectory
+{    
+   +std::vector<Peer> GetPeersHandlingMessage(MessageId messageId)
+}
+
+class Peer
+{
+   string PeerName;
+   string ip;
+   string protocol;
+   int port;
+}
+
+PeerDirectory..>Peer
+@enduml
