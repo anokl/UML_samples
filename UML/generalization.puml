@@ -1,4 +1,6 @@
 @startuml
+skinparam monochrome true
+
 Transport<|--PeerToPeerTransport
 Transport<|--MulticastTransport
 @enduml
