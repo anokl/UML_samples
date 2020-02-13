@@ -247,8 +247,16 @@ return
 @enduml
 ```
 
-## Component diagrams
 ## Package diagrams
+In UML, package diagrams is a way to group groups some elements togeather. Any kind of objects can be used as a package elements. A packages may contain other packages. Package diagrams make it easier to reason about complex systems with many elements and complex relations. 
+Very commonly, packages are used in combination with class digram. In this case packages may represent a class library or a namespace:
+
+
+
+
+
+
+
 ## Deployment diagrams
 ## Use case diagrams
 
