@@ -92,8 +92,23 @@ Hand "1" --> "0..5" Finger
 @enduml
 ```
 
-### Aggregation
-### Composition
+### Aggregation \ Composition
+Aggregation and composition add more semantic meaning to the relation. Aggregation relation assumes that a child object can exist independently of a parent object. In composition relation, a child can only exist in relation with a parent. 
+Graphically, agregation and composition are represented by a hollow and filled dimond respectively.
+This two notions are very domain specific. In the example above, a finger probably cannot exist separated of a hand (aggregation) but a ring can be either related to a finger or can be lost and therefore exist on its own (composition).
+
+![Class Diagram](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/anokl/UML_samples/master/UML/aggregation_composition.puml)
+
+```
+@startuml
+class Hand {}
+class Finger {}
+
+Hand "1" --> "0..5" Finger
+Finger "1" --> "0..*" Ring
+@enduml
+```
+
 ### Dependecy
 ### Generalization
 ### Realization
