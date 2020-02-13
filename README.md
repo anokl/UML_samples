@@ -148,6 +148,19 @@ Transport<|--MulticastTransport
 ```
 
 ### Realization
+
+Similar to generalization, realization in terms of OOP denotes an implementation of an interface:
+
+![Class Diagram](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/anokl/UML_samples/master/UML/realization.puml)
+
+```
+@startuml
+interface IHardwareCommChannel
+IHardwareCommChannel<|..CommChannel
+IHardwareCommChannel<|..SimulatedCommChannel
+@enduml
+```
+
 ## Component diagrams
 ## Package diagrams
 ## Deployment diagrams
