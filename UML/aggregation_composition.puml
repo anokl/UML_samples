@@ -1,0 +1,7 @@
+@startuml
+class Hand {}
+class Finger {}
+
+Hand "1" *--> "0..5" Finger
+Finger "1" o--> "0..*" Ring
+@enduml
