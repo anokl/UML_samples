@@ -160,18 +160,33 @@ IHardwareCommChannel<|..CommChannel
 IHardwareCommChannel<|..SimulatedCommChannel
 @enduml
 ```
-
-## Component diagrams
-## Package diagrams
-## Deployment diagrams
-## Use case diagrams
 ## Sequence diagrams
+
+Sequence diagrams visualize how components in a software system interact. 
+
 ### Lifeline
+
+In sequence diagram an object is graphically represented by rectangle. The lifeline of an object goes down from the center of the rectangle. In sequence diagram we manipulate objects and not classes (object is an instance of a class). Full object name is composed of the object name and its class name separated by a colum. This rule is often ignored and simple class names are used. 
+
+![Class Diagram](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/anokl/UML_samples/master/UML/lifeline.puml)
+
+``` 
+@startuml
+Bus--->Bus
+@enduml
+```
+
 ### Activation boxes
 ### Messages
 ### Loops
 ### Optional flows
 ### Alternative flows
+
+## Component diagrams
+## Package diagrams
+## Deployment diagrams
+## Use case diagrams
+
 ## Activity diagrams
 ### Start / end nodes
 ### Action / control flows
