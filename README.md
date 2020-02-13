@@ -55,6 +55,8 @@ Generated diagram:
 In class diagrams the directional relation should be interpreted as a navigability and depicted as a openhead arrow. 
 The following diagram means that Finger is navigable from Hand.  
 
+![Class Diagram](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/anokl/UML_samples/master/UML/directional_association.puml)
+
 Plant UML syntax:
 ```
 @startuml
@@ -64,10 +66,6 @@ class Finger {}
 Hand->Finger
 @enduml
 ```
-Generated diagram:
-
-![Class Diagram](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/anokl/UML_samples/master/UML/directional_association.puml)
-
 ### Multiplicity
 
 In UML the number of objects that participate in a relation is called multiplicity: 
@@ -83,6 +81,7 @@ In the example above, a humanoid hand usually have at most 5 fingures. In UML th
 
 ![Class Diagram](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/anokl/UML_samples/master/UML/multiplicity.puml)
 
+Plant UML syntax:
 ```
 @startuml
 class Hand {}
@@ -94,10 +93,13 @@ Hand "1" --> "0..5" Finger
 
 ### Aggregation \ Composition
 Aggregation and composition add more semantic meaning to the relation. Aggregation relation assumes that a child object can exist independently of a parent object. In composition relation, a child can only exist in relation with a parent. 
-Graphically, agregation and composition are represented by a hollow and filled dimond respectively.
-This two notions are very domain specific. In the example above, a finger probably cannot exist separated of a hand (aggregation) but a ring can be either related to a finger or can be lost and therefore exist on its own (composition).
+Graphically, agregation and composition are represented by a hollow and a filled dimond respectively.
+
+This two notions are very domain specific. In the example above, a finger probably cannot exist separated from hand (aggregation) but a ring can be either related to a finger or can be lost and therefore can exist on its own (composition). 
 
 ![Class Diagram](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/anokl/UML_samples/master/UML/aggregation_composition.puml)
+
+Plant UML syntax:
 
 ```
 @startuml
