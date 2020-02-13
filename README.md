@@ -92,7 +92,7 @@ Hand "1" --> "0..5" Finger
 ```
 
 ### Aggregation \ Composition
-Aggregation and composition add more semantic meaning to the relation. Aggregation relation assumes that a child object can exist independently of a parent object. In composition relation, a child can only exist in relation with a parent. 
+Aggregation and composition are relations with additional semantic meaning. Aggregation relation assumes that a child object can exist independently of a parent object. In composition relation, a child can only exist in relation with a parent. 
 Graphically, agregation and composition are represented by a hollow and a filled dimond respectively.
 
 This two notions are very domain specific. In the example above, a finger probably cannot exist separated from hand (aggregation) but a ring can be either related to a finger or can be lost and therefore can exist on its own (composition). 
