@@ -1,4 +1,6 @@
 @startuml
+skinparam monochrome true
+
 class Hand {}
 class Finger {}
 
