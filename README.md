@@ -114,9 +114,9 @@ Finger "1" --> "0..*" Ring
 ### Dependecy
 Dependency is another type of relationship between classes. This kind of relationship means that a class needs another class but does not contain its reference. This relation is weaker than assotiation. Typical, the assotiation may exist when a member function of a class takes another class as a parameter or returns it as a result of a member function. Grafically it is represented by a dashed arrow:
 
-![Class Diagram](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/anokl/UML_samples/master/UML/aggregation_composition.puml)
+![Class Diagram](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/anokl/UML_samples/master/UML/dependency.puml)
 
-
+```
 @startuml
 class PeerDirectory
 {    
@@ -125,14 +125,16 @@ class PeerDirectory
 
 class Peer
 {
-   string PeerName;
-   string ip;
-   string protocol;
-   int port;
+   +string PeerName;
+   +string ip;
+   +string protocol;
+   +int port;
 }
 
 PeerDirectory..>Peer
 @enduml
+```
+
 
 ### Generalization
 ### Realization
