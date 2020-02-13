@@ -37,24 +37,63 @@ Generated diagram:
 
 
 ### Association
-Is a generic term for a semantic relation between classes either unidirectional or bidirectionl. Usually, the bidirectional relation is assumed.
+Is a generic term for a semantic relation between classes either unidirectional or bidirectionl. Usually, the bidirectional relation is assumed if no arrows are specified. 
 
 Plant UML syntax:
-
+```
 @startuml
 class Hand {}
 class Finger {}
 
 Hand-Finger
 @enduml
-
+```
 Generated diagram:
+
 ![Class Diagram](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/anokl/UML_samples/master/UML/association.puml)
 
-### Association
+In class diagrams the directional relation should be interpreted as a navigability and depicted as a openhead arrow. 
+The following diagram means that Finger is navigable from Hand.  
+
+Plant UML syntax:
+```
+@startuml
+class Hand {}
+class Finger {}
+
+Hand->Finger
+@enduml
+```
+Generated diagram:
+
+![Class Diagram](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/anokl/UML_samples/master/UML/directional_association.puml)
+
+### Multiplicity
+
+In UML the number of objects that participate in a relation is called multiplicity: 
+
+Notation | Multiplicty
+---------| ---------
+1 | One and only one
+\*  | Zero or more
+1..\* | One or more
+0..1 | Zero or one
+
+In the example above, a humanoid hand usually have at most 5 fingures. In UML this relation can be depicted as following:
+
+![Class Diagram](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/anokl/UML_samples/master/UML/multiplicity.puml)
+
+```
+@startuml
+class Hand {}
+class Finger {}
+
+Hand "1" --> "0..5" Finger
+@enduml
+```
+
 ### Aggregation
 ### Composition
-### Multiplicity
 ### Dependecy
 ### Generalization
 ### Realization
