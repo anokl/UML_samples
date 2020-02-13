@@ -172,7 +172,7 @@ In sequence diagram an object is graphically represented by rectangle. The lifel
 
 ``` 
 @startuml
-Bus--->Bus
+bus:Bus--->bus:Bus
 @enduml
 ```
 
