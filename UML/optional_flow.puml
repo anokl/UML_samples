@@ -1,0 +1,9 @@
+@startuml
+MessageDispatcher -> Directory: PeerStarted
+activate Directory
+Directory -> Directory : RegisterPeer
+alt Master directory
+Directory -> Transport: SendSnapshot
+end
+return
+@enduml
