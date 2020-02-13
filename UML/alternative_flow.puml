@@ -1,0 +1,12 @@
+View->Controller: event
+
+activate Controller
+alt Tool navigate
+Controller->Controller: navigation
+else Tool contrast
+Controller->Controller: contrast change
+else Tool rotation
+Controller->Controller: rotate
+end
+return
+@enduml
