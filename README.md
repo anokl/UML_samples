@@ -206,12 +206,31 @@ On sequence diagram, objects cmmunicate and activate each other with messages. M
 ![UML](https://github.com/anokl/UML_samples/blob/master/UML/arrow_types.png)
 
 ### Loops
-Sometimes, the same task must be executed multiple times. For instance, when it is performed over elements of a collection. Just like in many declarative programming langauges, this repetitve actions can be expressed as loops:
+Sometimes, the same task must be executed multiple times. For instance, when it is performed over elements of a collection. Just like in majorty of imperative programming langauges, this repetitve actions can be expressed as loops:
 
 ![UML](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/anokl/UML_samples/master/UML/loop.puml)
 
 
-### Optional flows
+### Optional and alternative flows
+Optional and alternative flows allows to model alternatives in sequence diagrams. 
+Optional flow is very similar to if statement in imprerative programing language. 
+
+![UML](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/anokl/UML_samples/master/UML/optional_flow.puml)
+
+@startuml
+MessageDispatcher -> Directory: PeerStarted
+activate Directory
+Directory -> Directory : RegisterPeer
+alt Master directory
+Directory -> Transport: SendSnapshot
+end
+return
+@enduml
+
+Alternative flow is similar to switch statement.
+
+
+
 ### Alternative flows
 
 ## Component diagrams
