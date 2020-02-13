@@ -6,10 +6,10 @@ class PeerDirectory
 
 class Peer
 {
-   string PeerName;
-   string ip;
-   string protocol;
-   int port;
+   +string PeerName;
+   +string ip;
+   +string protocol;
+   +int port;
 }
 
 PeerDirectory..>Peer
