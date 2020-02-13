@@ -183,6 +183,7 @@ A task is usually activated by a messag coming from another object but an object
 
 ![Class Diagram](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/anokl/UML_samples/master/UML/activation_boxes.puml)
 
+```
 @startuml
 Client -> Bus: SendMessage
 activate Bus
@@ -197,10 +198,7 @@ deactivate Transport
 Bus->Client
 deactivate Bus
 @enduml
-
-
-
-
+```
 
 ### Messages
 ### Loops
