@@ -227,9 +227,7 @@ end
 return
 @enduml
 
-Alternative flow is similar to switch statement.
-
-
+Alternative flow is similar to switch statement:
 
 ### Alternative flows
 
