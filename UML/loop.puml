@@ -1,0 +1,10 @@
+@startuml
+Client -> Bus: SubscribeMessages
+activate Bus
+loop for each message
+Bus -> MessageDispatcher: RegisterHandler
+Bus -> Directory: PublishSubscriptionRequested
+end
+Bus --> Client
+deactivate Bus
+@enduml
