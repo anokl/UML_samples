@@ -1,0 +1,14 @@
+@startuml
+Client -> Bus: SendMessage
+activate Bus
+Bus -> Directory: GetPeersHandlingMessage
+activate Directory
+Directory->Bus: <<List of peers>>
+deactivate Directory
+Bus->Transport: SendMessageToPeers
+activate Transport
+Transport->Bus
+deactivate Transport
+Bus->Client
+deactivate Bus
+@enduml
