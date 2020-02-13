@@ -31,12 +31,26 @@ class A
 }
 @startuml
 ```
-Generated image:
+Generated diagram:
 
 ![Class Diagram](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/anokl/UML_samples/master/UML/visibility.puml)
 
 
 ### Association
+Is a generic term for a semantic relation between classes either unidirectional or bidirectionl. Usually, the bidirectional relation is assumed.
+
+Plant UML syntax:
+
+@startuml
+class Hand {}
+class Finger {}
+
+Hand-Finger
+@enduml
+
+Generated diagram:
+![Class Diagram](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/anokl/UML_samples/master/UML/association.puml)
+
 ### Association
 ### Aggregation
 ### Composition
