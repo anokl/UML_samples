@@ -50,12 +50,12 @@ Hand-Finger
 ```
 Generated diagram:
 
-![Class Diagram](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/anokl/UML_samples/master/UML/association.puml)
+![UML](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/anokl/UML_samples/master/UML/association.puml)
 
 In class diagrams the directional relation should be interpreted as a navigability and depicted as a openhead arrow. 
 The following diagram means that Finger is navigable from Hand.  
 
-![Class Diagram](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/anokl/UML_samples/master/UML/directional_association.puml)
+![UML](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/anokl/UML_samples/master/UML/directional_association.puml)
 
 Plant UML syntax:
 ```
@@ -79,7 +79,7 @@ Notation | Multiplicty
 
 In the example above, a humanoid hand usually have at most 5 fingures. In UML this relation can be depicted as following:
 
-![Class Diagram](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/anokl/UML_samples/master/UML/multiplicity.puml)
+![UML](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/anokl/UML_samples/master/UML/multiplicity.puml)
 
 Plant UML syntax:
 ```
@@ -97,7 +97,7 @@ Graphically, agregation and composition are represented by a hollow and a filled
 
 This two notions are very domain specific. In the example above, a finger probably cannot exist separated from hand (aggregation) but a ring can be either related to a finger or can be lost and therefore can exist on its own (composition). 
 
-![Class Diagram](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/anokl/UML_samples/master/UML/aggregation_composition.puml)
+![UML](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/anokl/UML_samples/master/UML/aggregation_composition.puml)
 
 Plant UML syntax:
 
@@ -114,7 +114,7 @@ Finger "1" --> "0..*" Ring
 ### Dependecy
 Dependency is another type of relationship between classes. This kind of relationship means that a class needs another class but does not contain its reference. This relation is weaker than assotiation. Typical, the assotiation may exist when a member function of a class takes another class as a parameter or returns it as a result of a member function. Grafically it is represented by a dashed arrow:
 
-![Class Diagram](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/anokl/UML_samples/master/UML/dependency.puml)
+![UML](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/anokl/UML_samples/master/UML/dependency.puml)
 
 ```
 @startuml
@@ -138,7 +138,7 @@ PeerDirectory..>Peer
 ### Generalization
 The generalization in terms of OOP is an inheritence. The inheritence may appear when a domain includes multiple classes of similar nature. The common attributes or member functions of such classes are moved to a common base class:
 
-![Class Diagram](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/anokl/UML_samples/master/UML/generalization.puml)
+![UML](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/anokl/UML_samples/master/UML/generalization.puml)
 
 ```
 @startuml
@@ -151,7 +151,7 @@ Transport<|--MulticastTransport
 
 Similar to generalization, realization in terms of OOP denotes an implementation of an interface:
 
-![Class Diagram](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/anokl/UML_samples/master/UML/realization.puml)
+![UML](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/anokl/UML_samples/master/UML/realization.puml)
 
 ```
 @startuml
@@ -181,7 +181,7 @@ Activation boxes on object liftime shows the periode when the object is completi
 A task is usually activated by a messag coming from another object but an object may also activate itself:
 
 
-![Class Diagram](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/anokl/UML_samples/master/UML/activation_boxes.puml)
+![UML](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/anokl/UML_samples/master/UML/activation_boxes.puml)
 
 ```
 @startuml
@@ -201,6 +201,13 @@ deactivate Bus
 ```
 
 ### Messages
+On sequence diagram, object cmmunicate and activate each other with messages. Messages are graphically represented by arrows. There are three types of messages: asynchronous, synchronous and reply
+
+![UML](https://github.com/anokl/UML_samples/blob/master/UML/arrow_types.png)
+
+
+
+
 ### Loops
 ### Optional flows
 ### Alternative flows
