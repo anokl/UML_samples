@@ -206,6 +206,10 @@ On sequence diagram, objects cmmunicate and activate each other with messages. M
 ![UML](https://github.com/anokl/UML_samples/blob/master/UML/arrow_types.png)
 
 ### Loops
+Sometimes, the same task must be executed multiple times. For instance, when it is performed over elements of a collection. Just like in many declarative programming langauges, this repetitve actions can be expressed as loops:
+
+![UML](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/anokl/UML_samples/master/UML/loop.puml)
+
 
 ### Optional flows
 ### Alternative flows
