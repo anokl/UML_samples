@@ -7,7 +7,7 @@ The structural modeling focuses on the static structure of the system, its compo
 * Package diagram
 * Deployment diagram
 
-The behavioral modelling describes the dynamic behaviour of the system, that is how the components interact and how the system changes over time. The behavoiral diagrams in UML include:
+The behavioral modeling describes the dynamic behaviour of the system, that is how the components interact and how the system changes over time. The behavoiral diagrams in UML include:
 * Use case diagram
 * Sequence diagram
 * Activity diagram
