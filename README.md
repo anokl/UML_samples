@@ -1,5 +1,11 @@
 # UML samples
-## Types of modelling
+
+1. [Types of modeling](#Types of modeling)
+2. [Class diagrams](#Class diagrams)
+3. [Sequence diagramse](#Sequence diagrams)
+4. [ Package diagrams](#Package diagrams)
+
+## Types of modeling
 There are two basic types of modeling: structural and behavioral. 
 The structural modeling focuses on the static structure of the system, its components and their relations. The structure diagrams in UML consist of the following:
 * Class diagram
