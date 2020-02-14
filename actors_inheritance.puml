@@ -1,0 +1,5 @@
+@startuml
+actor Nurse
+actor Surgent
+Nurse<|--Surgent
+@enduml
