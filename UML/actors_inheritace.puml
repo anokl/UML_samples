@@ -1,0 +1,6 @@
+@startuml
+actor Nurse
+actor Surgent
+Nurse<|--Surgent
+@enduml
+© 2020 GitHub, Inc.
