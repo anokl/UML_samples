@@ -251,9 +251,33 @@ return
 In UML, package diagrams is a way to group groups some elements togeather. Any kind of objects can be used as a package elements. A packages may contain other packages. Package diagrams make it easier to reason about complex systems with many elements and complex relations. 
 Very commonly, packages are used in combination with class digram. In this case packages may represent a class library or a namespace:
 
+![UML](http://www.plantuml.com/plantuml/proxy?src=https://github.com/anokl/UML_samples/blob/master/UML/package.puml)
 
+```
+@startuml
+package MessagingLib
+{
+interface ITransport
+class MulticastTransport
+ITransport<|..MulticastTransport
+}
 
+package CoreLib
+{
+class Thread
+}
 
+package IpLib
+{
+class UdpServer
+class UdpClient
+}
+
+Thread<|--MulticastTransport
+UdpServer--*MulticastTransport
+UdpClient--*MulticastTransport
+@enduml
+```
 
 
 
