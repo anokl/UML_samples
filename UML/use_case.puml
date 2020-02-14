@@ -1,0 +1,13 @@
+@startuml
+actor surgent
+actor robot
+actor camera
+
+rectangle NavigationApp{
+  surgent-- (coopMode)
+  (coopMode) -- robot
+  surgent-- (navigation): manipulates instrumets
+  (navigation)--camera: detects instruments position
+ 
+}
+@enduml
