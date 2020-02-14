@@ -315,6 +315,14 @@ HSDK -- Camera
 ```
 
 ## Use case diagrams
+In UML use case is a text that describes the system's behavior as it responds to requestions from users, known as actors.
+An actor is a role of someone or something that interacts qith a system. Just like with classes generalizations can be done on actors. Actor generalization is a relationship in which one actor inherits the role and the properies of another actor.
+
+![UML](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/anokl/UML_samples/master/UML/actors_inheritace.puml)
+
+Users are typically represented by the stick figures, the name of the use case appears inside ovals. Lines are used to show association between actors and use cases:
+
+![UML](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/anokl/UML_samples/master/UML/use_case.puml)
 
 ## Activity diagrams
 ### Start / end nodes
