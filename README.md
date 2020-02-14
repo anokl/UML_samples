@@ -103,11 +103,13 @@ Plant UML syntax:
 
 ```
 @startuml
+skinparam monochrome true
+
 class Hand {}
 class Finger {}
 
-Hand "1" --> "0..5" Finger
-Finger "1" --> "0..*" Ring
+Hand "1" *--> "0..5" Finger
+Finger "1" o--> "0..*" Ring
 @enduml
 ```
 
@@ -279,9 +281,39 @@ UdpClient--*MulticastTransport
 @enduml
 ```
 
-
-
 ## Deployment diagrams
+
+Deployment diagrams represent phisical deployment of artifacts on nodes. An artifact is a phisical piece of information such as executable file, script, document etc. A node is a computational resource that artifacts are deployed on. There are two types of nodes: device node and execution environment nodes.
+* Device node represents a phisical computaion resource (hardware): server, PC, tablet etc.
+* Execution environment is a software container that provides an execution environment for artifacts. Examples include operationg systems, virtual machines, Docker containers etc.
+
+![UML](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/anokl/UML_samples/master/UML/deployment.puml)
+
+```
+@startuml
+node ClinicalPC { 
+artifact NavigationApp 
+} 
+node HSDK { 
+artifact HardwareCom 
+} 
+node RobotController {
+artifact RobotFirmware 
+}
+node Tablet {
+artifact ChromeBrowser 
+}
+node Camera{
+artifact CameraFirmware 
+}
+
+ClinicalPC -- HSDK
+ClinicalPC -- Tablet
+HSDK -- RobotController
+HSDK -- Camera
+@enduml
+```
+
 ## Use case diagrams
 
 ## Activity diagrams
