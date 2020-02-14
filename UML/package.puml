@@ -1,0 +1,23 @@
+@startuml
+package MessagingLib
+{
+interface ITransport
+class MulticastTransport
+ITransport<|..MulticastTransport
+}
+
+package CoreLib
+{
+class Thread
+}
+
+package IpLib
+{
+class UdpServer
+class UdpClient
+}
+
+Thread<|--MulticastTransport
+UdpServer--*MulticastTransport
+UdpClient--*MulticastTransport
+@enduml
