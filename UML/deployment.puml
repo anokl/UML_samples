@@ -1,0 +1,22 @@
+@startuml
+node ClinicalPC { 
+artifact NavigationApp 
+} 
+node HSDK { 
+artifact HardwareCom 
+} 
+node RobotController {
+artifact RobotFirmware 
+}
+node Tablet {
+artifact ChromeBrowser 
+}
+node Camera{
+artifact CameraFirmware 
+}
+
+ClinicalPC -- HSDK
+ClinicalPC -- Tablet
+HSDK -- RobotController
+HSDK -- Camera
+@enduml
